@@ -5,7 +5,8 @@
     <style>
       body,
       html {
-				/* Set the height of the body and html elements to 100% */
+        /* Set the height of the body and html elements to 100% */
+        height: 100%;
 
 				/* What does this do? Nromally these collapse to the height 
 				of the content. Setting the height to 100% opens them 
@@ -14,38 +15,43 @@
     
       body {
 				/* The cards will fill this space. */
-				/* Use display flex */
+        /* Use display flex */
+        display: flex;
         
 				/* Center the elements in the row */
-        
+        justify-content: center;
 				/* Use align items stretch to make the cards stretch from top to bottom */
-        
+        align-items: stretch;
 				/* use your favorite font styles. Set font-family, font-size, line-height */
-        
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        line-height: 1.5;
       }
     
 			/* Style the h3. This is heading for each card */
       h3 {
 				/* Your favorite heading styles */
-        
+        font-weight: 1000;
 				/* Adjust the margin. Start with margin 0. */
-        
+        margin: 0.5em 0.5em 0.5em 0.5em;
 				/* Then set the margin on the top and bottom to taste */
       }
     
 			/* Style the card containers */
       .card {
 				/* Set the width of the cards. I used 340px */
-        
+        width: 340px;
         /* Display flex */
-        
+        display: flex;
 				/* direction column */
-        
+        flex-direction: column;
 				/* Align everything at the top with justify-content flex-start */
-        
+        justify-content: flex-start;
 				/* Give the card a border */
-        
-				/* Add some margin, I used 1em */
+        border: solid black 1px;
+        /* Add some margin, I used 1em */
+        margin: 1em;
+        max-height: 500px;
         
       }
     
@@ -57,32 +63,32 @@
       .card p {
 				/* Add some padding to the h3 and p in the card. 
 				I used 0 on the top and bottom and 1rem on the left and right. */
-        
+        padding:  0 0 1rem 1rem;
       }
     
 			/* There is a button at the bottom style it. */
       .card button {
 				/* button styles */
 				/* Add some padding, I used 0.5em */
-        
+        padding: 0.5em;
 				/* Add some margin, i used 1em */
-        
+        margin: 1em;
 				/* Remove the border, border: none */
-        
+        border:none;
 				/* Set the background color, I used cornflowerblue */
-        
+        background-color: cornflowerblue;
 				/* Set the color to #fff */
-        
+        color: white;
 				/* Give the button a width, I used 100px */
-        
+        width: 100px;
 
 				/* Position the button */
 				/* put it on the right side with align-self: flex-end */
-        
+        align-self: flex-end;
 				/* Push it to the bottom with margin-top: auto */
-        
+        margin-top: auto;
 				/* Set the font-size, I used 1em */
-        
+        font-size: 1em;
       }
     </style>
   </head>
